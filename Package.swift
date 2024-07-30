@@ -24,13 +24,13 @@ let package = Package(
 //    .package(name: "swift-cmark", path: "/Users/ryfar/Projects/swift-cmark/")
   ],
   targets: [
-//    .target(name: "cmark-gfm"),
+    .target(name: "cmark-gfm"),
     .target(
       name: "MarkdownUI",
       dependencies: [
-//        "cmark-gfm",
-        .product(name: "cmark-gfm", package: "swift-cmark"),
-        .product(name: "cmark-gfm-extensions", package: "swift-cmark"),
+        "cmark-gfm",
+//        .product(name: "cmark-gfm", package: "swift-cmark"),
+//        .product(name: "cmark-gfm-extensions", package: "swift-cmark"),
         .product(name: "NetworkImage", package: "NetworkImage"),
       ]
     ),
